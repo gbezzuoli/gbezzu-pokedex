@@ -1,13 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
+  background-image: url(./components/imgs/background4.png), url(./components/imgs/background2.jpg);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Press Start 2P', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.head-dex {
+  background-color: rgb(196, 60, 60);
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.list-dex {
+  display: flex;
+  justify-content: space-around;
+  
+  flex-flow: row;
+  row-gap: 50px;
+}
+
+.list-dex2 {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-content: space-between;
+  row-gap: 50px;
+}
+
+.card-dex {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-content: space-between;
+  row-gap: 50px;
+}
+
+.title-dex{
+  background-color: gray;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.img-poke {
+  border: black solid 1px;
+  padding: 50px;
+  border-radius: 200px;
+  box-shadow: gray 0px 0px 30px 0px;
+}
+
+.img-poke:hover {
+  border: black solid 3px;
+  padding: 50px;
+  border-radius: 200px;
+  box-shadow: gray 0px 0px 30px 0px;
+}
+
+.warning-dex {
+  background-color: rgb(196, 60, 60);
+  color: rgb(255, 255, 255);
+  padding: 6px;
+  font-size: 10px;
+}
+
+.cards {
+  background-color: white;
+  text-align: center;
+  width: 200px;
+  max-width: 200px;
+  box-shadow: black 0px 0px 10px 0px;
+  margin: 20px;
+  padding: 20px;
+  border: red solid 1px;
+  border-radius: 20px;
 }
