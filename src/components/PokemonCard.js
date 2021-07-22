@@ -20,16 +20,16 @@ componentDidMount(){
     }
 
     render() {
-
+        const wiki = `https://bulbapedia.bulbagarden.net/wiki/${this.state.name}_(Pok%C3%A9mon)`
 
         return (
             <div className='cards'>
                 <div className='title-dex'>
                 <h5>ID: {this.state.pokemonIndex}</h5>
-                <p>Name: {this.state.name}</p>
+                <a href={ wiki }>Name: {this.state.name}</a>
                 </div>
                 {this.state.imageLoading ? (
-                    <img src={spinner}></img>
+                    <img src={spinner} className='spinner'></img>
                 ) : null}
                 <img 
                 className='img-poke'

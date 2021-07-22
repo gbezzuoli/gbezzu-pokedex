@@ -1,15 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
-  background-image: url(./components/imgs/background4.png), url(./components/imgs/background2.jpg);
+  /* background-image: url(./components/imgs/background4.png), url(./components/imgs/background2.jpg); */
   margin: 0;
   font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  background-color: rgb(207, 78, 78);
 }
 
 .head-dex {
   background-color: rgb(196, 60, 60);
+  max-width: 40%;
+  margin: auto;
+  margin-top: 10px;
+  box-shadow: 10px 20px 40px black;
   display: flex;
   color: white;
   justify-content: center;
+}
+
+.spinner {
+  max-width: 40px;
+  margin: auto;
 }
 
 .list-dex {
@@ -25,7 +36,10 @@ body {
   justify-content: space-between;
   flex-flow: row wrap;
   align-content: space-between;
-  row-gap: 50px;
+  row-gap: 0px;;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
 }
 
 .card-dex {
@@ -38,22 +52,26 @@ body {
 
 .title-dex{
   background-color: gray;
+  font-size: 8px;
   padding: 20px;
   margin-bottom: 10px;
+  border-radius: 20px;
 }
 
 .img-poke {
   border: black solid 1px;
-  padding: 50px;
+  padding: 10px;
   border-radius: 200px;
   box-shadow: gray 0px 0px 30px 0px;
 }
 
 .img-poke:hover {
-  border: black solid 3px;
-  padding: 50px;
+  border: black solid 1px;
+  padding: 10px;
   border-radius: 200px;
   box-shadow: gray 0px 0px 30px 0px;
+  transition: 2s;
+  transform: scale(1.1);
 }
 
 .warning-dex {
@@ -64,13 +82,37 @@ body {
 }
 
 .cards {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
   background-color: white;
   text-align: center;
+  max-height: 200px;
   width: 200px;
   max-width: 200px;
-  box-shadow: black 0px 0px 10px 0px;
-  margin: 20px;
+  box-shadow: 10px 20px 40px black;
+  margin: 7px;
   padding: 20px;
-  border: red solid 1px;
+  border: red none 1px;
   border-radius: 20px;
+}
+
+.cards:hover {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  text-align: center;
+  max-height: 200px;
+  width: 200px;
+  max-width: 200px;
+  box-shadow: 10px 20px 40px black;
+  margin: 7px;
+  padding: 20px;
+  border: red none 1px;
+  border-radius: 20px;
+  transition: 2s;
+  transform: scale(1.1);
 }
