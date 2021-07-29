@@ -12,7 +12,7 @@ state={
 componentDidMount(){
     const { name, url} = this.props;
     const pokemonIndex = url.split('/')[url.split('/').length - 2];
-    const imageUrl = `https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/${pokemonIndex}.png?raw=true`
+    const imageUrl = `https://img.pokemondb.net/sprites/home/normal/${name}.png`
 
     this.setState(
         {name, imageUrl, pokemonIndex}
@@ -26,7 +26,7 @@ componentDidMount(){
             <div className='cards'>
                 <div className='title-dex'>
                 <h5>ID: {this.state.pokemonIndex}</h5>
-                <a href={ wiki }>Name: {this.state.name}</a>
+                <a href={ wiki } className='wikia'>Name: {this.state.name}</a>
                 </div>
                 {this.state.imageLoading ? (
                     <img src={spinner} className='spinner'></img>

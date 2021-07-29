@@ -37,7 +37,7 @@ body {
   flex-flow: row wrap;
   align-content: space-between;
   row-gap: 0px;;
-  width: 60%;
+  width: 100%;
   margin: auto;
   margin-top: 20px;
 }
@@ -53,9 +53,22 @@ body {
 .title-dex{
   background-color: gray;
   font-size: 8px;
+  margin: 4px;
   padding: 20px;
   margin-bottom: 10px;
   border-radius: 20px;
+}
+
+.wikia {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.wikia:hover {
+  text-decoration: none;
+  color: rgb(34, 32, 32);
+  font-size: 13px;
 }
 
 .img-poke {
@@ -88,12 +101,11 @@ body {
   align-content: center;
   background-color: white;
   text-align: center;
-  max-height: 200px;
-  width: 200px;
+  max-height: 250px;
+  width: 180px;
   max-width: 200px;
-  box-shadow: 10px 20px 40px black;
   margin: 7px;
-  padding: 20px;
+  padding: 9px;
   border: red none 1px;
   border-radius: 20px;
 }
@@ -105,14 +117,12 @@ body {
   align-content: center;
   background-color: white;
   text-align: center;
-  max-height: 200px;
-  width: 200px;
+  max-height: 250px;
+  width: 180px;
   max-width: 200px;
   box-shadow: 10px 20px 40px black;
   margin: 7px;
-  padding: 20px;
+  padding: 9px;
   border: red none 1px;
   border-radius: 20px;
-  transition: 2s;
-  transform: scale(1.1);
 }
