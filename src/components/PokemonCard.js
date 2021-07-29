@@ -5,17 +5,17 @@ export default class PokemonCard extends Component {
 state={
     name: "",
     image:"",
-    pokemonIndex: "",
+    id: 0,
+    status: "",
+    species: "",
     imageLoading: true,
     toManyRequests: false
 };
 componentDidMount(){
-    const { name, url} = this.props;
-    const pokemonIndex = url.split('/')[url.split('/').length - 2];
-    const imageUrl = `https://img.pokemondb.net/sprites/home/normal/${name}.png`
+    const { name, id, status, image, species, gender, origin, location, type} = this.props;
 
     this.setState(
-        {name, imageUrl, pokemonIndex}
+        {name, image, id, status, species, gender, origin, location, type}
     );
     }
 
@@ -25,8 +25,16 @@ componentDidMount(){
         return (
             <div className='cards'>
                 <div className='title-dex'>
-                <h5>ID: {this.state.pokemonIndex}</h5>
-                <a href={ wiki } className='wikia'>Name: {this.state.name}</a>
+                <ul className='info'>
+                    <li>{this.state.id}</li>
+                    <li>Status: {this.state.status}</li>
+                    <li>Species: {this.state.species}</li>
+                    <li>Gender: {this.state.gender}</li>
+                    <li>Origin: {this.state.origin}</li>
+                    <li>Location:{this.state.location}</li>
+                    <li>{this.state.type}</li>
+                </ul>
+                <a href={ wiki } className='wikia'>{this.state.name}</a>
                 </div>
                 {this.state.imageLoading ? (
                     <img src={spinner} className='spinner'></img>
@@ -35,7 +43,7 @@ componentDidMount(){
                 className='img-poke'
                 onLoad={() => this.setState({imageLoading: false})}
                 onError={() => this.setState({ toManyRequests: true})}
-                src={this.state.imageUrl}
+                src={this.state.image}
                 style={
                     this.state.toManyRequests
                      ? { display: 'none'}

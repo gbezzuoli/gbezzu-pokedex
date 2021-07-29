@@ -4,16 +4,18 @@ body {
   margin: 0;
   font-family: 'Press Start 2P', cursive;
   text-transform: uppercase;
-  background-color: rgb(207, 78, 78);
+  background-color: rgb(63, 170, 152);
 }
 
 .head-dex {
-  background-color: rgb(196, 60, 60);
+  background-color: rgb(5, 39, 33);
   max-width: 40%;
   margin: auto;
   margin-top: 10px;
   box-shadow: 10px 20px 40px black;
   display: flex;
+  flex-flow: column wrap;
+  align-content: center;
   color: white;
   justify-content: center;
 }
@@ -51,7 +53,7 @@ body {
 }
 
 .title-dex{
-  background-color: gray;
+  background-color: rgb(223, 223, 223);
   font-size: 8px;
   margin: 4px;
   padding: 20px;
@@ -63,6 +65,8 @@ body {
   text-decoration: none;
   color: black;
   font-size: 12px;
+  max-width: 150px;
+  line-break: auto;
 }
 
 .wikia:hover {
@@ -88,10 +92,17 @@ body {
 }
 
 .warning-dex {
-  background-color: rgb(196, 60, 60);
+  background-color: rgb(5, 39, 33);
   color: rgb(255, 255, 255);
   padding: 6px;
   font-size: 10px;
+}
+
+.info {
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
+  padding: 2px;
 }
 
 .cards {
@@ -101,9 +112,6 @@ body {
   align-content: center;
   background-color: white;
   text-align: center;
-  max-height: 250px;
-  width: 180px;
-  max-width: 200px;
   margin: 7px;
   padding: 9px;
   border: red none 1px;
@@ -117,12 +125,13 @@ body {
   align-content: center;
   background-color: white;
   text-align: center;
-  max-height: 250px;
-  width: 180px;
-  max-width: 200px;
   box-shadow: 10px 20px 40px black;
   margin: 7px;
   padding: 9px;
   border: red none 1px;
   border-radius: 20px;
+}
+
+.logo {
+  max-width: 200px;
 }
