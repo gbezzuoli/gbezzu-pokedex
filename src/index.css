@@ -37,7 +37,7 @@ body {
   flex-flow: row wrap;
   align-content: space-between;
   row-gap: 0px;;
-  width: 100%;
+  width: 50%;
   margin: auto;
   margin-top: 20px;
 }
